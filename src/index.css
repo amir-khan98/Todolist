@@ -1,0 +1,18 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  @apply bg-blend-multiply;
+}
+
+body::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  width: 100%;
+  background: linear-gradient(to top, rgb(61, 2, 129), transparent);
+  pointer-events: none;
+}
